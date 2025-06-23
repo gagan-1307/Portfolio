@@ -147,7 +147,6 @@ html,
 :host {
   line-height: 1.5;
   /* 1 */
-  text-size-adjust: 100%; 
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -moz-tab-size: 4;
@@ -559,8 +558,46 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .inset-0 {
   inset: 0px;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .bg-\[\#050414\] {
@@ -581,9 +618,32 @@ video {
   background-size: 14px 24px;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -595,6 +655,31 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#8245ec\] {
+  --tw-text-opacity: 1;
+  color: rgb(130 69 236 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#4593ec\] {
+  --tw-text-opacity: 1;
+  color: rgb(69 147 236 / var(--tw-text-opacity, 1));
+}
+
+.text-\[rgb\(69\2c 147\2c 236\)\] {
+  --tw-text-opacity: 1;
+  color: rgb(69 147 236 / var(--tw-text-opacity, 1));
+}
+
+.text-\[hsl\(212\2c 81\%\2c 60\%\)\] {
+  --tw-text-opacity: 1;
+  color: hsl(212 81% 60% / var(--tw-text-opacity, 1));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -602,4 +687,10 @@ video {
 .\[mask-image\:radial-gradient\(ellipse_60\%_50\%_at_50\%_0\%\2c \#000_70\%\2c transparent_100\%\)\] {
   -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 0%,#000 70%,transparent 100%);
           mask-image: radial-gradient(ellipse 60% 50% at 50% 0%,#000 70%,transparent 100%);
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
 }
