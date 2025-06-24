@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Work from './Components/Work/Work';
 import Education from './Components/Education/Education';
 import Experience from './Components/Experience/Experience';
+import { Analytics } from "@vercel/analytics/next"
 import Blur from './Components/Blur';
 import './index.css'
 
