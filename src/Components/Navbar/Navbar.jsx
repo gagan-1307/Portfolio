@@ -9,9 +9,15 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
     const handleClick = (id) => {
-        setActive(id);
-        setIsOpen(false);
+    setActive(id);
+    setIsOpen(false);
+
+    const section = document.getElementById(id);
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
     }
+};
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,7 +31,7 @@ const Navbar = () => {
         { id: "about", label: "About" },
         { id: "skills", label: "Skills" },
         { id: "experience", label: "Experience" },
-        { id: "work", label: "Projects" },
+        { id: "projects", label: "Projects" },
         { id: "education", label: "Education" },
     ];
 

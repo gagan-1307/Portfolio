@@ -3,7 +3,7 @@ import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-parallax-tilt';
 import profileImg from '../../assets/profile2.jpg';
 import { TypeAnimation } from 'react-type-animation';
-import {Typewriter} from 'react-simple-typewriter';
+import { Typewriter } from 'react-simple-typewriter';
 
 
 const About = () => {
@@ -25,7 +25,7 @@ const About = () => {
                         <span className="text-white">I am a </span>
                         <span className="text-[#4593ec]">
                             <Typewriter
-                                words={['Fullstack Developer', 'Python Developer', 'Coder' ,'Competitive Programmer']}
+                                words={['Fullstack Developer', 'Python Developer', 'Coder', 'Competitive Programmer']}
                                 loop={0}
                                 cursor
                                 cursorStyle="|"
@@ -56,7 +56,7 @@ const About = () => {
                         <img
                             src={profileImg}
                             alt="Gagandeep Singh"
-                            className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
+                            className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(69,147,236,0.5)]"
                         />
                     </Tilt>
                 </div>
