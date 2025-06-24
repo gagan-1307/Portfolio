@@ -25,6 +25,7 @@ function App() {
           <Work/>
           <Contact/>
           <Footer/>
+          <Analytics />
         </div>
       </div>
     </>
