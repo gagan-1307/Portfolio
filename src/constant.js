@@ -36,14 +36,18 @@ import cnLogo from './assets/cnLogo.jpeg';
 import aimlLogo from './assets/aimlLogo.png';
 
 // Work / Projects
-import sleepmonitorLogo from './assets/sleepmonitorLogo.webp';
 import airbnbLogo from './assets/airbnbLogo.webp';
 import pongLogo from './assets/pongLogo.jpeg';
 
 // Education
 import nitkkrLogo from './assets/nitkkrLogo.png';
-import gsssLogo from './assets/government school.png';  // Rename file to `gsssLogo.png` if possible for clarity
-import swamiLogo from './assets/government school.png';  // Reuse same logo if it's the same school
+import gsssLogo from './assets/gsssLogo.webp';
+import swamiLogo from './assets/swamiLogo.webp';
+import sleepmonitorLogo from './assets/sleepmonitorLogo.webp';
+import rewearLogo from './assets/rewearLogo.webp';
+import summarizeLogo from './assets/summarizeLogo.jpg';
+import glareLogo from './assets/glareLogo.webp';
+import financeLogo from './assets/financeLogo.jpg';
 
 
 export const SkillsInfo = [
@@ -181,34 +185,73 @@ export const education = [
 
 export const projects = [
   {
-  id: 9,
-  title: "Smart Sleep Monitoring System",
-  description:
-    "An IoT-based smart sleep monitoring system built using ESP8266, sensors, and Wokwi Simulator. The system processed 10,000+ real-time data points to analyze sleep cycles. Implemented AI/ML-driven predictive analytics for anomaly detection and automated room conditions to enhance sleep quality by 30%. Used Pandas and NumPy for data processing and visualization.",
-  image: sleepmonitorLogo,
-  tags: ["IoT", "ESP8266", "C", "AI/ML", "Pandas", "NumPy", "Wokwi", "Data Analytics"],
-  github: "https://wokwi.com/projects/410982773289702401",
-  webapp: "https://thingspeak.mathworks.com/channels/2684116",
-},
-{
-  id: 10,
-  title: "Airbnb Extended",
-  description:
-    "A full-stack rental platform built with the MERN stack, supporting 100+ property listings. Features include JWT-based authentication, Google Maps API integration, and a React-based frontend migrated from EJS for a 40% improvement in load time. Ensured 99.9% uptime with MongoDB Atlas and secure RESTful API design.",
-  image: airbnbLogo, 
-  tags: ["MongoDB", "Express", "React JS", "Node.js", "JWT", "Google Maps API"],
-  github: "https://github.com/gagan-1307/Airbnb-extended.git",
-  webapp: "", 
-},
-{
-  id: 11,
-  title: "Pong Game",
-  description:
-    "A high-performance Pong game built using Python's Turtle library, optimized to run at 60 FPS. Features include real-time collision detection, dynamic difficulty adjustment, and a visually appealing GUI with live score tracking.",
-  image: pongLogo,
-  tags: ["Python", "Turtle", "Game Development", "GUI"],
-  github: "https://github.com/gagan-1307/Pong-Game.git",
-  webapp: "", 
-},
-
-];  
+    id: 1,
+    title: "AI-Powered Finance Platform",
+    description:
+      "An AI-driven financial intelligence platform leveraging Google Gemini API for real-time insights. Features include automated financial pattern recognition, anomaly detection, and personalized recommendations. Designed scalable workflows using serverless jobs and integrated monitoring with ArcJet for reliability.",
+    image: financeLogo,
+    tags: ["Next.js", "Supabase", "Prisma", "AI/ML", "Google Gemini API", "Serverless", "ArcJet"],
+    github: "https://github.com/gagan-1307/ai-powered-finance-platform.git",
+    webapp: "",
+  },
+  {
+    id: 2,
+    title: "Glare - Interview Preparation",
+    description:
+      "A smart interview preparation tool offering curated questions, AI-powered insights, and personalized practice sessions. Integrated authentication with Clerk and Supabase, real-time progress tracking, and a clean UI built with Tailwind & Shadcn components.",
+    image: glareLogo,
+    tags: ["Next.js", "Clerk", "Supabase", "Tailwind", "Shadcn", "AI"],
+    github: "https://github.com/gagan-1307/Glare-Interview-Prep.git",
+    webapp: "",
+  },
+  {
+    id: 3,
+    title: "Summarize.ai - AI Transcript Summarizer",
+    description:
+      "A transcript summarization platform that uses advanced NLP models to generate concise and structured summaries of long recordings. Built with Next.js and deployed on serverless infrastructure for fast, scalable processing.",
+    image: summarizeLogo,
+    tags: ["Next.js", "AI/ML", "NLP", "Serverless", "React"],
+    github: "https://github.com/gagan-1307/Summarize.ai",
+    webapp: "",
+  },
+  {
+    id: 4,
+    title: "Rewear - Sustainable Exchange of Clothes",
+    description:
+      "A sustainability-focused platform enabling users to exchange, donate, and repurpose clothes. Integrated with Supabase backend, JWT authentication, and a React-based UI for a smooth user experience. Encourages eco-friendly fashion choices.",
+    image: rewearLogo,
+    tags: ["React", "Supabase", "JWT", "Node.js", "Sustainability"],
+    github: "https://github.com/gagan-1307/rewear.git",
+    webapp: "",
+  },
+  {
+    id: 5,
+    title: "Smart Sleep Monitoring System",
+    description:
+      "An IoT-based system using ESP8266 and sensors to monitor sleep patterns. Processed 10,000+ real-time data points with Pandas/NumPy and applied AI-driven predictive analytics for anomaly detection. Improved sleep quality by 30% through automated room adjustments.",
+    image: sleepmonitorLogo,
+    tags: ["IoT", "ESP8266", "C", "AI/ML", "Pandas", "NumPy", "Wokwi", "Data Analytics"],
+    github: "https://wokwi.com/projects/410982773289702401",
+    webapp: "https://thingspeak.mathworks.com/channels/2684116",
+  },
+  {
+    id: 6,
+    title: "Airbnb Extended",
+    description:
+      "A full-stack rental platform with 100+ property listings. Built on MERN stack with JWT authentication, Google Maps API, and MongoDB Atlas. Migrated frontend from EJS to React for 40% faster load times and ensured 99.9% uptime with secure RESTful APIs.",
+    image: airbnbLogo, 
+    tags: ["MongoDB", "Express", "React JS", "Node.js", "JWT", "Google Maps API"],
+    github: "https://github.com/gagan-1307/Airbnb-org.git",
+    webapp: "", 
+  },
+  {
+    id: 7,
+    title: "Pong Game",
+    description:
+      "A high-performance Pong game built with Python's Turtle library. Features smooth 60 FPS gameplay, real-time collision detection, adaptive difficulty levels, and a polished GUI with live score tracking.",
+    image: pongLogo,
+    tags: ["Python", "Turtle", "Game Development", "GUI"],
+    github: "https://github.com/gagan-1307/Pong-Game.git",
+    webapp: "", 
+  },
+];
