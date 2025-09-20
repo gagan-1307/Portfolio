@@ -14,10 +14,10 @@ const About = () => {
         >
             <div className="flex flex-col-reverse md:flex-row justify-between items-center">
                 <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
-                    <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2 leading-tight">
+                    <h1 className="text-2xl sm:text-3xl md:text-5xl font-mono font-bold text-white mb-2 leading-tight">
                         Hi, I am
                     </h1>
-                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
+                    <h2 className="text-3xl sm:text-4xl md:text-6xl  font-mono font-bold text-white mb-4 leading-tight">
                         Gagan
                     </h2>
 
@@ -25,7 +25,7 @@ const About = () => {
                         <span className="text-white">I am a </span>
                         <span className="text-[#4593ec]">
                             <Typewriter
-                                words={['Fullstack Developer', 'Python Developer', 'Coder', 'Competitive Programmer']}
+                                words={['Competitive Programmer', 'Fullstack Developer', 'Data Analyst', 'ML Expert']}
                                 loop={0}
                                 cursor
                                 cursorStyle="|"
