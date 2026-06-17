@@ -48,6 +48,24 @@ import rewearLogo from './assets/rewearLogo.webp';
 import summarizeLogo from './assets/summarizeLogo.jpg';
 import glareLogo from './assets/glareLogo.webp';
 import financeLogo from './assets/financeLogo.jpg';
+import riddlesMasterLogo from './assets/riddlesMasterLogo.png';
+
+
+// AI/ML
+import numpyLogo from './assets/numpyLogo.webp';
+import pandasLogo from './assets/pandasLogo.webp';
+import sklearnLogo from './assets/sklearnLogo.webp';
+import tensorflowLogo from './assets/tensorflowLogo.webp';
+import pytorchLogo from './assets/pytorchLogo.webp';
+import kerasLogo from './assets/kerasLogo.webp';
+import matplotlibLogo from './assets/matplotlibLogo.webp';
+import seabornLogo from './assets/seabornLogo.webp';
+import plotlyLogo from './assets/plotlyLogo.webp';
+import opencvLogo from './assets/opencvLogo.webp';
+import geminiLogo from './assets/geminiLogo.webp';
+import dockerLogo from './assets/dockerLogo.webp';
+import nextjsLogo from './assets/nextjsLogo.webp';
+import heartLogo from './assets/aimlLogo.png';
 
 
 export const SkillsInfo = [
@@ -58,6 +76,7 @@ export const SkillsInfo = [
       { name: 'CSS', logo: cssLogo },
       { name: 'JavaScript', logo: javascriptLogo },
       { name: 'React JS', logo: reactjsLogo },
+      { name: 'Next JS', logo: nextjsLogo },
       { name: 'Redux', logo: reduxLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
       { name: 'Bootstrap', logo: bootstrapLogo },
@@ -91,28 +110,45 @@ export const SkillsInfo = [
       { name: 'VS Code', logo: vscodeLogo },
       { name: 'Postman', logo: postmanLogo },
       { name: 'Vercel', logo: vercelLogo },
+      { name: 'Docker', logo: dockerLogo },
     ],
   },
   {
-  title: 'Fundamentals',
-  skills: [
-    { name: 'OOP', logo: oopLogo },
-    { name: 'DBMS', logo: dbmsLogo },
-    { name: 'Operating Systems', logo: osLogo },
-    { name: 'Computer Networks', logo: cnLogo },
-    { name: 'AI & ML', logo: aimlLogo },
-  ],
-},
-{
-  title: 'Soft Skills',
-  skills: [
-    { name: 'Communication', logo: communicationLogo },
-    { name: 'Teamwork', logo: teamworkLogo },
-    { name: 'Leadership', logo: leadershipLogo },
-    { name: 'Adaptability', logo: adaptabilityLogo },
-    { name: 'Problem Solving', logo: problemSolvingLogo },
-  ],
-},
+    title: 'Fundamentals',
+    skills: [
+      { name: 'OOP', logo: oopLogo },
+      { name: 'DBMS', logo: dbmsLogo },
+      { name: 'Operating Systems', logo: osLogo },
+      { name: 'Computer Networks', logo: cnLogo },
+      { name: 'AI & ML', logo: aimlLogo },
+    ],
+  },
+  {
+    title: 'AI / ML',
+    skills: [
+      { name: 'NumPy', logo: numpyLogo },
+      { name: 'Pandas', logo: pandasLogo },
+      { name: 'Scikit-learn', logo: sklearnLogo },
+      { name: 'TensorFlow', logo: tensorflowLogo },
+      { name: 'PyTorch', logo: pytorchLogo },
+      { name: 'Keras', logo: kerasLogo },
+      { name: 'Matplotlib', logo: matplotlibLogo },
+      { name: 'Seaborn', logo: seabornLogo },
+      { name: 'Plotly', logo: plotlyLogo },
+      { name: 'OpenCV', logo: opencvLogo },
+      { name: 'Google Gemini AI', logo: geminiLogo },
+    ],
+  },
+  {
+    title: 'Soft Skills',
+    skills: [
+      { name: 'Communication', logo: communicationLogo },
+      { name: 'Teamwork', logo: teamworkLogo },
+      { name: 'Leadership', logo: leadershipLogo },
+      { name: 'Adaptability', logo: adaptabilityLogo },
+      { name: 'Problem Solving', logo: problemSolvingLogo },
+    ],
+  },
 
 ];
 
@@ -135,11 +171,11 @@ export const experiences = [
   },
   {
     id: 2,
-    img: problemSolvingLogo, 
+    img: problemSolvingLogo,
     role: "Competitive Programmer",
     company: "Self-Learning",
     date: "2023 - Present",
-    desc: "Sharpened problem-solving skills by solving 250+ problems across platforms like LeetCode and GeeksforGeeks. Focused on mastering core topics such as trees, graphs, dynamic programming, and object-oriented principles. Actively participated in contests to improve speed, logic building, and coding efficiency.",
+    desc: "Sharpened problem-solving skills by solving 900+ problems across platforms like LeetCode and GeeksforGeeks. Focused on mastering core topics such as trees, graphs, dynamic programming, and object-oriented principles. Actively participated in contests to improve speed, logic building, and coding efficiency.",
     skills: [
       "C++",
       "Data Structures",
@@ -158,13 +194,13 @@ export const education = [
     img: nitkkrLogo,
     school: "National Institute of Technology, Kurukshetra",
     date: "2023 – 2027",
-    grade: "8.78 CGPA (Till Now)",
+    grade: "8.86 CGPA (Till Now)",
     desc: "Currently pursuing a Bachelor of Technology (B.Tech) in Information Technology at NIT Kurukshetra. My curriculum covers core subjects including Data Structures, Algorithms, Operating Systems, DBMS, Computer Networks, and Artificial Intelligence. I’ve actively engaged in development projects and hackathons, enhancing both technical and team collaboration skills.",
     degree: "Bachelor of Technology - B.Tech in Information Technology",
   },
   {
     id: 1,
-    img: gsssLogo, 
+    img: gsssLogo,
     school: "Government Senior Secondary School, Bijjuwali",
     date: "2022 – 2023",
     grade: "96.6%",
@@ -173,7 +209,7 @@ export const education = [
   },
   {
     id: 2,
-    img: swamiLogo, 
+    img: swamiLogo,
     school: "Swami Dayanand Senior Secondary School",
     date: "2020 – 2021",
     grade: "100%",
@@ -186,16 +222,46 @@ export const education = [
 export const projects = [
   {
     id: 1,
+    title: "RiddlesMaster",
+    description:
+      "Engineered an end-to-end full-stack daily puzzle application scaling to 150+ riddles across 25+ categories. Architected a SSG (Static Site Generation) frontend utilizing Astro.js and getStaticPaths(), reducing page load times to under 1 second for optimized Core Web Vitals and SEO. Designed a high-performance database schema using Supabase and Prisma to efficiently process relational queries for 365-day streak tracking, dynamic activity heatmaps, and a real-time leaderboard. Integrated Razorpay API for premium B2C subscription infrastructure, and migrated the continuous deployment pipeline and Prisma runtime engine from Cloudflare Pages to Vercel.",
+    image: riddlesMasterLogo,
+    tags: ["Astro.js", "TypeScript", "Tailwind CSS", "Supabase", "Prisma", "Vercel", "Razorpay"],
+    github: "https://github.com/gagan-1307/Riddles-Master.git",
+    webapp: "https://riddles-master.vercel.app",
+  },
+  {
+    id: 2,
+    title: "NIT KKR Timetable System",
+    description:
+      "Built a role-based timetable automation platform used by 15+ departments and 200+ faculty, reducing manual scheduling effort by 70%. Developed an Excel ingestion pipeline to parse and normalize timetable data into database schemas. Designed high-performance REST APIs with multi-parameter filtering, implemented secure JWT-based authentication with role-based access control, and automated room-wise and faculty-wise schedule PDF generation.",
+    image: nitkkrLogo,
+    tags: ["React", "Node.js", "Express", "MongoDB", "JWT", "REST API"],
+    github: "https://github.com/gagan-1307",
+    webapp: "https://timetable-nit-kkr.onrender.com/",
+  },
+  {
+    id: 3,
     title: "AI-Powered Finance Platform",
     description:
       "An AI-driven financial intelligence platform leveraging Google Gemini API for real-time insights. Features include automated financial pattern recognition, anomaly detection, and personalized recommendations. Designed scalable workflows using serverless jobs and integrated monitoring with ArcJet for reliability.",
     image: financeLogo,
     tags: ["Next.js", "Supabase", "Prisma", "AI/ML", "Google Gemini API", "Serverless", "ArcJet"],
     github: "https://github.com/gagan-1307/ai-powered-finance-platform.git",
+    webapp: "https://ai-powered-finance-platform.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Heart Disease Prediction – Machine Learning",
+    description:
+      "A predictive ML model that estimates heart disease risk based on patient health data. Implemented full pipeline including EDA, feature engineering, model training, hyperparameter tuning, and evaluation. Achieved 88.5% accuracy using Logistic Regression and 83.6% with Random Forest, delivering interpretable insights into key health indicators like cholesterol and chest pain type.",
+    image: heartLogo,
+    tags: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Seaborn", "EDA", "Logistic Regression", "Random Forest"],
+    github: "https://github.com/gagan-1307/Heart-Disease-Analysis.git",
     webapp: "",
   },
   {
-    id: 2,
+    id: 5,
     title: "Glare - Interview Preparation",
     description:
       "A smart interview preparation tool offering curated questions, AI-powered insights, and personalized practice sessions. Integrated authentication with Clerk and Supabase, real-time progress tracking, and a clean UI built with Tailwind & Shadcn components.",
@@ -205,7 +271,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 3,
+    id: 6,
     title: "Summarize.ai - AI Transcript Summarizer",
     description:
       "A transcript summarization platform that uses advanced NLP models to generate concise and structured summaries of long recordings. Built with Next.js and deployed on serverless infrastructure for fast, scalable processing.",
@@ -215,7 +281,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 4,
+    id: 7,
     title: "Rewear - Sustainable Exchange of Clothes",
     description:
       "A sustainability-focused platform enabling users to exchange, donate, and repurpose clothes. Integrated with Supabase backend, JWT authentication, and a React-based UI for a smooth user experience. Encourages eco-friendly fashion choices.",
@@ -225,7 +291,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 5,
+    id: 8,
     title: "Smart Sleep Monitoring System",
     description:
       "An IoT-based system using ESP8266 and sensors to monitor sleep patterns. Processed 10,000+ real-time data points with Pandas/NumPy and applied AI-driven predictive analytics for anomaly detection. Improved sleep quality by 30% through automated room adjustments.",
@@ -235,23 +301,23 @@ export const projects = [
     webapp: "https://thingspeak.mathworks.com/channels/2684116",
   },
   {
-    id: 6,
-    title: "Airbnb Extended",
+    id: 9,
+    title: "Airbnb",
     description:
       "A full-stack rental platform with 100+ property listings. Built on MERN stack with JWT authentication, Google Maps API, and MongoDB Atlas. Migrated frontend from EJS to React for 40% faster load times and ensured 99.9% uptime with secure RESTful APIs.",
-    image: airbnbLogo, 
+    image: airbnbLogo,
     tags: ["MongoDB", "Express", "React JS", "Node.js", "JWT", "Google Maps API"],
     github: "https://github.com/gagan-1307/Airbnb-org.git",
-    webapp: "", 
+    webapp: "",
   },
   {
-    id: 7,
+    id: 10,
     title: "Pong Game",
     description:
       "A high-performance Pong game built with Python's Turtle library. Features smooth 60 FPS gameplay, real-time collision detection, adaptive difficulty levels, and a polished GUI with live score tracking.",
     image: pongLogo,
     tags: ["Python", "Turtle", "Game Development", "GUI"],
     github: "https://github.com/gagan-1307/Pong-Game.git",
-    webapp: "", 
+    webapp: "",
   },
 ];
